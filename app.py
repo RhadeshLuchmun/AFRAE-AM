@@ -9,7 +9,7 @@ st.set_page_config(page_title="Quant Portfolio Dashboard", layout="wide")
 # --- 1. DATA LOADING & CACHING ---
 @st.cache_data
 def load_data():
-    file_path = "/Users/rhadeshluchmun/Desktop/AFRAE-AM/Project Data.xlsx"
+    file_path = "Project Data.xlsx"
     
     xls = pd.ExcelFile(file_path)
     sheets = xls.sheet_names
